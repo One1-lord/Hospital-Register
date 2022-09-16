@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Hospital OOP</title>
+  </head>
+  <body>
+    <input class="seachbox" id="display2" type="search" />
+    <input class="seachbox" id="display1" type="search" />
+    <br />
+    <button onclick="Mainfunc()" class="firstbutton">Admit patient</button>
+    <button onclick="RecruteWorker()" class="firstbutton">Recrute Woker</button>
+
+    <section
+      style="display: flex; justify-content: space-evenly"
+      id="outcome"
+    >
+      <div>
+        <h1>Cardiac</h1>
+        <p>Doctors</p>
+        <ul id="cardiac-doctors"></ul>
+        <p>Nurses</p>
+        <ul id="cardiac-nurses"></ul>
+        <p>Patients</p>
+        <ul id="cardiac-patients"></ul>
+      </div>
+
+      <div>
+        <h1>Surgical</h1>
+        <p>Doctors</p>
+        <ul id="surgical-doctors"></ul>
+        <p>Nurses</p>
+        <ul id="surgical-nurses"></ul>
+        <p>Patients</p>
+        <ul id="surgical-patients"></ul>
+   
+      </div>
+      <div>
+        <h1>Maternity</h1>
+        <p>Doctors</p>
+        <ul id="maternity-doctors"></ul>
+        <p>Nurses</p>
+        <ul id="maternity-nurses"></ul>
+        <p>Patients</p>
+        <ul id="maternity-patients"></ul>
+
+       
+      </div>
+    </section>
+
+    <script src="hospital.js"></script>
+  </body>
+</html>
