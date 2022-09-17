@@ -2,12 +2,12 @@ let cardiacDesease = ["hypertension", "stroke", "attack"];
 let surgicalIssues = ["fracture", "tumoil", "opperation"];
 let maternityIssues = ["bedRest", "delivery", "antinatal"];
 
-let cardiacDoctor;
-let surgicalDoctor;
-let maternityDoctor;
-let cardiacNurse;
-let surgicalNurse;
-let maternityNurse;
+let cardiacDoctor = ["cardiacDoctor"];
+let surgicalDoctor = ["surgicalDoctor"];
+let maternityDoctor =["maternityDoctor"];
+let cardiacNurse = ["cardiacNurse"];
+let surgicalNurse =["surgicalNurse"];
+let maternityNurse =["maternityNurse"];
  
 
 class Hospital {
@@ -143,30 +143,36 @@ RecruteWorker =() =>{
    search2 = document.getElementById("display2").value;
 
   
-
-   
-  if (cardiacDoctor == search1) {
+  
+   if (cardiacDoctor.indexOf(search1) > -1) {
     cardiac.recruteDoctor(search2);
-  } else
-  if (cardiacNurse == search1) {
+
+  }
+   
+   if (cardiacNurse.indexOf(search1) > -1) {
     cardiac.recruteNurse(search2);
 
-   } else
-   if (surgicalDoctor == search1) {
+  }
+  
+   if (surgicalDoctor.indexOf(search1) > -1) {
     surgical.recruteDoctor(search2);
 
-   }else
-   if (surgicalNurse == search1) {
-    surgical.recruteNurse(search2);
-  }else
-
-   if (maternityDoctor == search1) {
-    maternity.recruteDoctor(search2);
-  }else
-   if (maternityNurse == search1) {
-    maternity.recruteNurse(search2);
   }
-  else {}
+  
+   if (surgicalNurse.indexOf(search1) > -1) {
+    surgical.recruteNurse(search2);
+
+  }
+  
+   if (maternityDoctor.indexOf(search1) > -1) {
+    maternity.recruteDoctor(search2);
+
+  }
+  
+   if (maternityNurse.indexOf(search1) > -1) {
+    maternity.recruteNurse(search2);
+
+  };
   
   console.log(cardiac)
   console.log(maternity)
