@@ -1,13 +1,13 @@
 let cardiacDesease = ["hypertension", "stroke", "attack"];
 let surgicalIssues = ["fracture", "tumoil", "opperation"];
-let maternityIssues = ["bedRest", "delivery", "antinatal"];
+let maternityIssues = ["bed rest", "delivery", "antinatal"];
 
-let cardiacDoctor = ["cardiacDoctor"];
-let surgicalDoctor = ["surgicalDoctor"];
-let maternityDoctor =["maternityDoctor"];
-let cardiacNurse = ["cardiacNurse"];
-let surgicalNurse =["surgicalNurse"];
-let maternityNurse =["maternityNurse"];
+let cardiacDoctor = ["cardiac doctor"];
+let surgicalDoctor = ["surgical doctor"];
+let maternityDoctor =["maternity doctor"];
+let cardiacNurse = ["cardiac nurse"];
+let surgicalNurse =["surgical nurse"];
+let maternityNurse =["maternity nurse"];
  
 
 class Hospital {
@@ -204,6 +204,9 @@ RecruteWorker =() =>{
     maternity.nurses .map((newNurse) => {
       return `<li>${newNurse}</li>`;
       });
+search1="";
+search2="";
 
-
+console.log(search1)
+console.log(search2)
 };
